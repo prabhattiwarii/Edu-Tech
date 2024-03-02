@@ -25,10 +25,10 @@ const Header = () => {
             <ul className={`${mobileMenu ? "" : "hide-mobile-menu"}`}>
                 <li className='list'><Link to="banner" smooth={true} offset={0} duration={500}>Home</Link></li>
                 <li className='list'><Link to="programs" smooth={true} offset={-260} duration={500}>Program</Link></li>
-                <li className='list'><Link to="about" smooth={true} offset={0} duration={500}>About us</Link></li>
-                <li className='list'><Link to="campus" smooth={true} offset={0} duration={500}>Campus</Link></li>
-                <li className='list'><Link to="testimonial" smooth={true} offset={0} duration={500}>Testimonail</Link></li>
-                <li className='list'><Link to="contact" smooth={true} offset={0} duration={500}><button className='btn'>Contact us</button></Link></li>
+                <li className='list'><Link to="about" smooth={true} offset={-150} duration={500}>About us</Link></li>
+                <li className='list'><Link to="campus" smooth={true} offset={-250} duration={500}>Campus</Link></li>
+                <li className='list'><Link to="testimonial" smooth={true} offset={-250} duration={500}>Testimonail</Link></li>
+                <li className='list'><Link to="contact" smooth={true} offset={-250} duration={500}><button className='btn'>Contact us</button></Link></li>
             </ul>
             <img src={menuIcon} alt="menuicon" className='menu-icon' onClick={toggleMenu}/>
         </nav>

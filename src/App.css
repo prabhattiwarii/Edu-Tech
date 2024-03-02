@@ -37,7 +37,7 @@ a{
 
 @media(max-width:1200px){
   .container{
-    padding:0 5% !important;
+    padding:0 5%;
   }
   .btn{
     padding: 14px 22px;

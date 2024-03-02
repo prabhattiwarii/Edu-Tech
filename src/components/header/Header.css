@@ -31,12 +31,12 @@ nav ul .list{
         width:140px
     }
     nav ul li {
-        margin: 10px 15px
+        margin: 10px 15px !important;
     }
 }
 @media (max-width:840px) {
     nav{
-        padding:15px !important;
+        padding:15px 5% !important;
     }
     nav ul{
         position:fixed;
