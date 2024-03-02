@@ -41,3 +41,11 @@
     margin-top: 5px;
     resize: none;
 }
+@media (max-width:800px){
+    .contact{
+        flex-direction: column;
+    }
+    .contact .contact-left ,.contact .contact-right{
+        padding: 20px;
+    }
+}

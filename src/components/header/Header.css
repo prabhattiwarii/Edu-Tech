@@ -50,8 +50,8 @@ nav ul .list{
         transition: .5s;
     }
     ul .list{
-        display: block;
-        margin:25px 40px;
+        display: block !important;
+        margin:25px 40px !important;
     }
     .menu-icon{
         display:block;

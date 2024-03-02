@@ -17,3 +17,12 @@
     background: #212ea0;
     color: #fff;
 }
+@media (max-width: 800px){
+.campus .gallery {
+    flex-wrap: wrap;
+}
+.campus .gallery img{
+    width:48%;
+    margin-bottom:25px;
+}
+}
