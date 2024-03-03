@@ -14,8 +14,18 @@ nav{
     background: #212ea0;
     transition: .5s;
 }
+.img-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-wrap span{
+    font-size:22px;
+    font-weight:700;
+}
 .logo{
-    width:180px;
+    width:40px;
+    filter: invert(100%);
 }
 nav ul .list{
     display: inline-block;
@@ -27,9 +37,6 @@ nav ul .list{
     display: none;
 }
 @media (max-width: 1000px) {
-    .logo {
-        width:140px
-    }
     nav ul li {
         margin: 10px 15px !important;
     }

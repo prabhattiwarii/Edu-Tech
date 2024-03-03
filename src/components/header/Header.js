@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Header.css"
-import logo from "../../assets/logo.png"
+import logo from "../../assets/graduation-cap.png"
 import menuIcon from "../../assets/menu-icon.png"
 import {Link} from 'react-scroll';
 
@@ -21,7 +21,9 @@ const Header = () => {
     }
     return (
         <nav className={`container ${sticky ? "dark" : ""}`}>
-            <img src={logo} alt="Logo" className='logo' />
+            <div className="img-wrap">
+                <img src={logo} alt="Logo" className='logo' /> <span>EDU-TECH</span>
+            </div>
             <ul className={`${mobileMenu ? "" : "hide-mobile-menu"}`}>
                 <li className='list'><Link to="banner" smooth={true} offset={0} duration={500}>Home</Link></li>
                 <li className='list'><Link to="programs" smooth={true} offset={-260} duration={500}>Program</Link></li>

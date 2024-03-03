@@ -23,6 +23,9 @@ const Contact = () => {
         if (data.success) {
             setResult("Form Submitted Successfully");
             event.target.reset();
+            setTimeout(() => {
+                setResult("");
+            },2000)
         } else {
             console.log("Error", data);
             setResult(data.message);
@@ -51,7 +54,9 @@ const Contact = () => {
                     <textarea name="message" id="message" rows="6" placeholder='Enter your message' />
                     <button className="btn dark-btn" type='submit'>Submit Now<img src={arrow} alt="" /></button>
                 </form>
-                <span style={{marginTop:"10px"}}>{result}</span>
+                {result && (
+                    <span className='msg'>{result}</span>
+                )}
             </div>
         </div>
     )
